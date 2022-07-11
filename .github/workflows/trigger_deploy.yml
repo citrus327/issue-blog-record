@@ -1,5 +1,7 @@
 name: Trigger Deploy
 on:
+  issue_comment:
+    types: [created, edited, deleted]
   issues:
     types:
       [opened, deleted, edited, labeled, unlabeled, milestoned, demilestoned]
