@@ -4,7 +4,16 @@ on:
     types: [created, edited, deleted]
   issues:
     types:
-      [opened, deleted, edited, labeled, unlabeled, milestoned, demilestoned]
+      [
+        opened,
+        deleted,
+        edited,
+        labeled,
+        unlabeled,
+        milestoned,
+        demilestoned,
+        closed,
+      ]
 jobs:
   deploy:
     runs-on: ubuntu-latest
