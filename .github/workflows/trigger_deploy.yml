@@ -14,4 +14,4 @@ jobs:
           -H "Authorization: Bearer ${{secrets.ACCESS_TOKEN}}" \
           -H "Accept: application/vnd.github.v3+json" \
           https://api.github.com/repos/phshy0607/blog/actions/workflows/gh_pages.yml/dispatches \
-          -d '{"ref": "master"}'
+          -d '{"ref": "main"}'
