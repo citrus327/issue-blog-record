@@ -1,7 +1,8 @@
 name: Trigger Deploy
 on:
-  issue_comment:
-    types: [created, deleted, edited]
+  issues:
+    types:
+      [opened, deleted, edited, labeled, unlabeled, milestoned, demilestoned]
 jobs:
   deploy:
     runs-on: ubuntu-latest
